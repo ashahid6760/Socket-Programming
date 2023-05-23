@@ -1,0 +1,8 @@
+#-*- MakeFile -*-
+
+all:client.exe
+
+client.exe: client.o
+	gcc client.o -o client.exe
+client.o: client.c
+	gcc client.c -c
